@@ -149,11 +149,13 @@ function TemplateLinks() {
  * A server component that displays the content on the homepage of the Hydrogen app
  */
 export default function Welcome() {
+  // eslint-disable-next-line no-undef
+  const {WELCOME_MESSAGE} = Oxygen.env;
   return (
     <div className="text-gray-900 pt-16 rounded-[40px] my-16 px-4 xl:px-12 bg-gradient-to-b from-white -mx-4 xl:-mx-12">
       <div className="text-center mb-16">
         <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">
-          Hello, Hydrogen
+          Hello, {WELCOME_MESSAGE}
         </h1>
         <p className="text-lg mb-8">
           Welcome to your custom storefront. Let&rsquo;s get building.
