@@ -2,7 +2,7 @@ import {defineConfig} from '@shopify/hydrogen/config';
 import {
   CookieSessionStorage,
   PerformanceMetricsServerAnalyticsConnector,
-} from '@shopify/hydrogen';
+} from '@shopify/hydrogen/config';
 
 export default defineConfig({
   shopify: () => ({
